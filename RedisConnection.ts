@@ -1,5 +1,5 @@
 import Redis, { Redis as RedisConnection, RedisOptions } from 'ioredis';
-import { IRedisConnection } from '../domain/models/IRedisConnection';
+import { IRedisConnection } from './IRedisConnection';
 import cacheConfig from '@config/cache/redis';
 
 export class DataRedis implements IRedisConnection{
