@@ -62,7 +62,7 @@ export const redis = new DataRedis(cacheConfig.config.redis);
 
 ### Crie um provider
 ```typescript
-import { DataRedis, redis } from 'src/libs/redis-connection/implementations/RedisConnection';
+import { DataRedis, redis } from '@libs/redis-connection/implementations/RedisConnection';
 
 interface IRedisCacheProvider{
   save(key: string, value: any): Promise<void>;
